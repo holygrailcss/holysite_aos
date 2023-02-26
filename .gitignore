@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# IDEs and editors
+.vscode/
+
+# Temporary
+.scss/style.scss
+
+# Assets
+assets/
+
+# Compiled output
+dist/
+.cache/
+build/
+scss/style.scss
+
