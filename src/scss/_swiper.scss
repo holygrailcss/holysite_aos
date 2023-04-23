@@ -47,3 +47,17 @@
 	color:#fff;
 	background: #007aff;
 }
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #eaeaea;
+}

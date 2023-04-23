@@ -1,49 +1,34 @@
-@font-face {
-  font-family: 'font-light';
-  src: url('../fonts/neutrif/font-light.woff2') format('woff2'),
-    url('../fonts/neutrif/font-light.woff') format('woff');
-}
-@font-face {
-  font-family: 'font-regular';
-  src: url('../fonts/neutrif/font-regular.woff2') format('woff2'),
-    url('../fonts/neutrif/font-regular.woff') format('woff');
-}
+$headersFixers: (
+  12: (
+    12px,
+    1.5,
+  ),
+  14: (
+    14px,
+    1.5,
+  ),
 
-@font-face {
-  font-family: 'font-medium';
-  src: url('../fonts/neutrif/font-medium.woff2') format('woff2'),
-    url('../fonts/neutrif/font-medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'font-semibold';
-  src: url('../fonts/neutrif/font-semibold.woff2') format('woff2'),
-    url('../fonts/neutrif/font-semibold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'font-bold';
-  src: url('../fonts/neutrif/font-bold.woff2') format('woff2'),
-    url('../fonts/neutrif/font-bold.woff') format('woff');
-}
+  20: (
+    20px,
+    1.5,
+  )
+  ) ;
 
 $headers:/* name:mobile,768,992,1280,line-height,font */ (
   h1: ( 32px, 32px, 32px, 40px, 1.2, 'medium', ),
-   h2: ( 24px, 24px, 24px, 32px, 1.2, 'medium', ), 
-   h3: ( 18px, 18px, 18px, 24px, 1.2, 'medium', ), 
-   h4: ( 16px, 16px, 16px, 18px, 1.2, 'bold', ), 
-   h5: ( 16px, 16px, 16px, 16px, 1.2, 'bold', ), 
-   h6: ( 12px, 12px, 12px, 14px, 1.2, 'medium', ),
-    h7: ( 10px, 10px, 10px, 12px, 1.2, 'medium', ), 
-    h8: ( 8px, 8px, 8px, 10px, 1.2, 'medium', ),
-     h9: ( 12px, 16px, 16px, 18px, 1.2, 'medium', ),
-      display1: ( 32px, 32px, 32px, 48px, 1.2, 'bold', ), 
-      prod: ( 12px, 12px, 14px, 14px, 1.2, 'medium', ), 
+  h2: ( 24px, 24px, 24px, 32px, 1.2, 'light', ), 
+  h3: ( 18px, 18px, 18px, 24px, 1.2, 'medium', ), 
+  h4: ( 16px, 16px, 16px, 18px, 1.2, 'bold', ), 
+  h5: ( 16px, 16px, 16px, 16px, 1.2, 'bold', ), 
+  h6: ( 12px, 12px, 12px, 14px, 1.2, 'medium', ),
+  h7: ( 10px, 10px, 10px, 12px, 1.2, 'medium', ), 
+  h8: ( 8px, 8px, 8px, 10px, 1.2, 'medium', ),
+  h9: ( 12px, 16px, 16px, 18px, 1.2, 'medium', ),
 
-           p1: ( 14px, 14px, 14px, 14px, 1.4, 'regular', ), 
-           p2: ( 14px, 14px, 16px, 18px, 1.4, 'regular', ), 
-           p3: ( 12px, 14px, 14px, 14px, 1.4, 'regular', ), 
-           p4: ( 14px, 14px, 16px, 18px, 1.4, 'medium', ), 
+  p1: ( 14px, 14px, 14px, 14px, 1.4, 'regular', ), 
+  p2: ( 14px, 14px, 16px, 18px, 1.4, 'regular', ), 
+  p3: ( 12px, 14px, 14px, 14px, 1.4, 'regular', ), 
+  p4: ( 14px, 14px, 16px, 18px, 1.4, 'medium', ), 
 
 );
 
@@ -61,113 +46,37 @@ $headersFluids: (
 ) !default;
 
 $mb: 'margin-bottom';
-$margin-bottom: /* name : margen bottom*/ (
-  mb-8: (
-    8px,
-    8px,
-    8px,
-    8px,
-  ),
-  mb-16: (
-    16px,
-    16px,
-    16px,
-    16px,
-  ),
-  mb-24: (
-    24px,
-    24px,
-    24px,
-    24px,
-  ),
-  mb-32: (
-    32px,
-    32px,
-    32px,
-    32px,
-  ),
-  mb-40: (
-    40px,
-    40px,
-    40px,
-    40px,
-  ),
-  mb-48: (
-    48px,
-    48px,
-    48px,
-    48px,
-  ),
-  mb-64: (
-    64px,
-    64px,
-    64px,
-    64px,
-  ),
-  mb-82: (
-    82px,
-    82px,
-    82px,
-    82px,
-  ),
-  mb-100: (
-    100px,
-    100px,
-    100px,
-    100px,
-  ),
-  mbr-50-100: (
-    50px,
-    50px,
-    100px,
-    100px,
-  ),
-  mbr-24: (
-    16px,
-    24px,
-    24px,
-    24px,
-  ),
-  mbr-32: (
-    24px,
-    32px,
-    32px,
-    32px,
-  ),
-  mbr-64: (
-    32px,
-    64px,
-    64px,
-    64px,
-  ),
-  mbr-128: (
-    64px,
-    128px,
-    128px,
-    128px,
-  ),
-  //todo giftcard
-  mbr-20-40:
-    (
-      20px,
-      40px,
-      40px,
-      40px,
-    ),
-) !default;
+$margin-bottom: 
+( 
+mb-8: ( 8px, 8px, 8px, 8px, ),
+mb-16: ( 16px, 16px, 16px, 16px, ),
+mb-24: ( 24px, 24px, 24px, 24px, ),
+mb-32: ( 32px, 32px, 32px, 32px, ), 
+mb-40: ( 40px, 40px, 40px, 40px, ), 
+mb-48: ( 48px, 48px, 48px, 48px, ),
+mb-64: ( 64px, 64px, 64px, 64px, ), 
+mb-82: ( 82px, 82px, 82px, 82px, ), 
+mb-100: ( 100px, 100px, 100px, 100px, ),
+mbr-50-100: ( 50px, 50px, 100px, 100px, ), 
+mbr-24: ( 16px, 24px, 24px, 24px, ), 
+mbr-32: ( 24px, 32px, 32px, 32px, ), 
+mbr-64: ( 32px, 64px, 64px, 64px, ), 
+mbr-128: ( 64px, 128px, 128px, 128px, ),
+ ); //todo giftcard mbr-20-40: ( 20px, 40px, 40px, 40px, ), ) !default;
 
-$font-family-a-r: 'font-Regular', Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
-$font-family-a-m: 'font-Medium',  Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
-$font-family-a-b: 'font-Bold', Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
-
-$font-family-b-r: 'font-Regular', Helvetica, Arial, sans-serif;
-$font-family-b-m: 'font-Regular', Helvetica,'Arial', sans-serif;
-$font-family-b-b: 'font-Regular', Helvetica, 'arial black', sans-serif;
-
-$font-family-c-r:'ms-serif',serif;
-$font-family-c-m:  'ms-serif',serif;
-$font-family-c-b:'ms-serif',serif;
-
+ $font-family-a-l: 'avantgardelt-extralight', Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+ $font-family-a-r: 'lato-regular', Helvetica, 'Arial ', 'Lucida Grande', sans-serif; // las fuentes necesitan corrección de line-height ya que no todas son iguales
+ $font-family-a-m: 'lato-regular',  Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+ $font-family-a-b: 'lato-bold', Helvetica, 'Arial ', 'Lucida Grande', sans-serif;
+ 
+ $font-family-b-r: 'lato-regular', Helvetica, Arial, sans-serif;
+ $font-family-b-m: 'lato-regular', Helvetica,'Arial', sans-serif;
+ $font-family-b-b: 'lato-regular', Helvetica, 'arial black', sans-serif;
+ 
+ $font-family-c-r:'ms-serif',serif;
+ $font-family-c-m: 'ms-serif',serif;
+ $font-family-c-b:'ms-serif',serif;
+ 
 
 
 
@@ -180,6 +89,10 @@ $font-family-form-placeholder: 'font-Regular';
 $font-family-form: 'font-Regular';
 
 $btn-radius: 8px;
+$padding-global:0;
+$container: 992px ;
+
+
 
 // massimodutti color MD 2022
 $c-white: #ffffff;

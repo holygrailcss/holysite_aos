@@ -1,3 +1,4 @@
+@import 'base/_fonts.scss';
 @import 'abstract/_setup.scss';
 @import '_swiper.scss';
 
@@ -41,3 +42,16 @@ header {
   }
 }
 
+.header-img{
+  background-image: url('https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.has-light{
+  a{
+    color: white;
+  }
+}

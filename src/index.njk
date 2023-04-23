@@ -1,57 +1,75 @@
 {% extends "html/templates/base.njk" %}
 {% block documentTitle %}Home{% endblock %}
-	{% import 'html/templates/_globals.njk' as globals %}
-    {% block content %}
+{% import 'html/templates/_globals.njk' as globals %}
+{% block content %}
   <div class="is-home "  >
-      <div class="container"  > 
-    <section   >
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="  height-full is-flex  flex-column content-center">
-                  digitalstrategy
-              <h1 class="fluid-48-b"> Algunos trabajan con quien pueden , <br> nosotros con quien <b>queremos</b>. </h1>
+    <div class="container-fluid bleed-0"  >
+
+      <section class="header-img has-light"  >
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="  height-full is-flex  flex-column content-center">
+                    DIGITALSTRATEGY
+                <h1 class="fluid-64-l"> Algunos trabajan con  <br> quien pueden ,  nosotros  <br> con quien  queremos. </h1>
+              </div>
             </div>
           </div>
-    </section>
-    <section   >
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="  height-full is-flex  flex-column content-center">
-                    Seccion 2
-              <h1 class="fluid-48-b"> Algunos trabajan con quien pueden , <br> nosotros con quien <b>queremos</b>. </h1>
-            </div>
-          </div>
-    </section>
-  {% include "html/partials/_proyectos.njk" %}
-    <div class="row">
-      <div class="col-xs-12">
-        
-        <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
+
+        </section>
+
+        <section   >
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="  height-full is-flex  flex-column content-center">
+                      SECCIÓN 2
+                  <h1 class="fluid-64-l"> Algunos trabajan con  <br> quien pueden ,  nosotros  <br> con quien  queremos. </h1>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-        
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        {% include "html/partials/_proyectos.njk" %}
+        <div class="row">
+          <div class="col-xs-12">
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <svg class="svg-icon svg-icon--arrow-tip-left" role="img" aria-hidden="true">
+
+                  <symbol id="arrow-tip-right" viewBox="0 0 7.1 12.7">
+                    <polygon points="0.7,12.7 0,12 5.6,6.4 0,0.7 0.7,0 7.1,6.4 "></polygon>
+                  </symbol>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg class="svg-icon svg-icon--arrow-tip-right" role="img" aria-hidden="true">
+                  <use xlink:href="#arrow-tip-right"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
-
-
-
-    </div>
-  </div>
-
-{% endblock %}
+  {% endblock %}

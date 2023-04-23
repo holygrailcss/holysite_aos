@@ -1,13 +1,15 @@
 import 'regenerator-runtime/runtime';
 import { gsap } from 'gsap';
+import Rellax from 'rellax';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 Swiper.use([Navigation]);
 
 
 //init zone
 gsap.registerPlugin(ScrollTrigger);
-
+var rellax = new Rellax('.rellax');
+console.log(rellax, mySwiper);
 
 
 document.body.onscroll = function() {

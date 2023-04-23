@@ -5,6 +5,7 @@
   "main": "src/index.njk",
   "scripts": {
     "start": "npm run clean && cross-env NODE_ENV=development parcel src/index.njk --open",
+    "guia": "npm run clean && cross-env NODE_ENV=development parcel src/guia.njk --open",
     "prebuild": "cross-env NODE_ENV=production rimraf dist/* && npm run lint",
     "build": "cross-env NODE_ENV=production parcel build src/index.njk --no-cache",
     "preserve": "npm run build",
@@ -38,12 +39,13 @@
   "homepage": "https://github.com/",
   "dependencies": {
     "@barba/core": "^2.9.7",
+    "aos": "^2.3.4",
     "gsap": "^3.11.3",
     "gsap-trial": "3.11.3",
-    "locomotive-scroll": "^4.1.4",
     "mathsass": "0.11.0",
     "photoswipe": "^5.3.4",
     "regenerator-runtime": "^0.13.11",
+    "rellax": "^1.12.1",
     "swiper": "^8.4.5"
   },
   "devDependencies": {
@@ -55,7 +57,7 @@
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "holygrailcss": "^2.0.18",
+    "holygrailcss": "^2.0.108",
     "husky": "^4.2.5",
     "lint-staged": "^10.3.0",
     "modern-normalize": "^1.0.0",
